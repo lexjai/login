@@ -1,9 +1,9 @@
 <?php include 'conexion.php';
 
-if(!session_start()){
-    header("location:index.php");
+session_start();
+if(!isset($_SESSION['user'])){
+    header("Location: index.php");
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
