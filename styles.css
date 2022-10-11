@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(221, 226, 226);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+   
+}
+#fportada{
+    display: none;
+}
+tr, td , th{
+    padding: 1em;
+    border: solid 2px;
+    text-align: center;
+}
+table{
+    border-collapse:collapse 
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(146, 163, 90);
+    border-radius: 10px;
+}
