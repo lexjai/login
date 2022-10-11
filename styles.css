@@ -4,18 +4,31 @@ body{
     align-content: center;
     justify-content: center;
     height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
    
 }
+/* .buton{
+    width: 100%;
+} */
 #fportada{
     display: none;
 }
 tr, td , th{
-    padding: 1em;
+    padding: 0.5em;
     border: solid 2px;
     text-align: center;
 }
+.content{
+   height: 50%;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+}
 table{
-    border-collapse:collapse 
+    border-collapse:collapse ;
+    height: 100%;
 }
 a{
     padding: 10px;
@@ -25,18 +38,84 @@ a{
     border-radius: 10px;
 }
 
-.container-login{
+/* .container-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+.login{
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
-.login{
- 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+    border: hidden ;
+    border-radius: 15px;
+    border-color: rgb(141, 141, 141);
+    padding: 2em;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-.login label{
-    margin: 5px;
+form label , .datos>label{
     width: 100%;
     padding: 20px;
+    font-size: 12px;
+    font-weight: bold;
+
+    text-align: center;
+}
+form input{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(232, 228, 228);
+    padding: 10px;
+}
+.datos{
+    margin: 15px 0;
+    text-align: left!important;
+}
+#btn{
+    background-color: rgb(34, 55, 55);
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    
+}
+#fportada>form{
+align-items: end;
+margin: 0 15px;
+}
+.buton{
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+
+}
+.salir>button,.salir>a{
+
+    padding: 15px!important;
+    font-size: 12px;
+    font-weight: bold!important;
+    border-radius: 5px;
+    color: white;
+
+}
+.salir>button{
+    background-color: rgb(6, 92, 6);
+    border: none;
+
+}
+.salir>a{
+background-color: rgb(108, 14, 14);
+
 }

@@ -13,12 +13,15 @@
         <div class="login">
             <form action="login.php" method="POST">
             <label for="user">Usuario
-                <input type="text" name ="nombre" required>
             </label>
-            <label for="user">contraseña
-                <input type="password" name="dni" required>
+            <input type="text" name ="nombre" required>
+
+            <label for="user">Contraseña
+         
             </label>
-                <input type="submit">
+            <input type="password" name="dni" required>
+
+          <input type="submit" value="Enviar" id="btn">
             </form>
             
         </div>

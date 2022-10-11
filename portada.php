@@ -1,4 +1,5 @@
 <?php include 'conexion.php';
+      
 
 session_start();
 if(!isset($_SESSION['user'])){
@@ -23,9 +24,19 @@ if(!isset($_SESSION['user'])){
 </script>
 </head>
 <body>
+        <div class="buton">
+		<div class="salir">
+        <a href ="salir.php"> Salir</a>
+		<button Onclick="mostrar()">+</button>
+
+        </div>
+
+		</div>
+        
 	
-	<button Onclick="mostrar()">+</button>
+	<div class="content">
 	<table>
+		
 		<thead>
 			<tr>
 
@@ -55,6 +66,7 @@ if(!isset($_SESSION['user'])){
            
         </tbody>
 	</table>
+	
 	<div class="formulario" id="fportada">
 	   
 	   
@@ -80,8 +92,10 @@ if(!isset($_SESSION['user'])){
 					required>
 			</div>
 
-			<input type="submit" value="Enviar">
+			<input type="submit" id ="#btn" value="Enviar">
 		</form>
 	</div>
+	</div>
+
 </body>
 </html>
